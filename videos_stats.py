@@ -33,7 +33,7 @@ def get_video_ids(playlist_id):
     video_ids = []
     page_token = None
     
-    base_url = f"https://youtube.googleapis.com/youtube/v3/playlistItems?part=contentDetails&maxResults=1&playlistId={playlist_id}&key={API_KEY}"
+    base_url = f"https://youtube.googleapis.com/youtube/v3/playlistItems?part=contentDetails&maxResults={maxResults}&playlistId={playlist_id}&key={API_KEY}"
 
     try:
         while True:
